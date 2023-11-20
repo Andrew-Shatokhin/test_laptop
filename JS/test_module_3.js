@@ -221,17 +221,33 @@
 
 // ==============================================12/41=========================================
 
-function countProps(object) {
-  let propCount = 0;
-  // Change code below this line
-for(key in object){
-  if(object.hasOwnProperty(key)){
-    propCount += 1;
-  }
-}
-  // Change code above this line
-  return propCount;
-};
-console.log(countProps({ name: "Mango", age: 2 }));
-console.log(countProps({ mail: "poly@mail.com", isOnline: true, score: 500 }));
+// function countProps(object) {
+//   let propCount = 0;
+//   // Change code below this line
+// for(key in object){
+//   if(object.hasOwnProperty(key)){
+//     propCount += 1;
+//   }
+// }
+//   // Change code above this line
+//   return propCount;
+// };
+// console.log(countProps({ name: "Mango", age: 2 }));
+// console.log(countProps({ mail: "poly@mail.com", isOnline: true, score: 500 }));
 // ==============================================12/41=========================================
+
+// ==============================================13/41=========================================
+const apartment = {
+  descr: "Spacious apartment in the city center",
+  rating: 4,
+  price: 2153,
+};
+const values = [];
+// Change code below this line
+const keys = Object.keys(apartment);
+for (const key of keys) {
+    values.push(apartment[key])
+};
+console.log(keys);
+console.log(values);
+// ==============================================13/41=========================================
