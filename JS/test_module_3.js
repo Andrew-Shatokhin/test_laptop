@@ -166,13 +166,29 @@
 // ==============================================8/41=========================================
 
 // ==============================================9/41=========================================
-const emailInputName = "email";
-const passwordInputName = "password";
+// const emailInputName = "email";
+// const passwordInputName = "password";
 
-const credentials = {
-  [emailInputName]: "henry.carter@aptmail.com",
-  [passwordInputName]: "jqueryismyjam",
+// const credentials = {
+//   [emailInputName]: "henry.carter@aptmail.com",
+//   [passwordInputName]: "jqueryismyjam",
   
-};
-console.log(credentials)
+// };
+// console.log(credentials)
 // ==============================================9/41=========================================
+
+// ==============================================10/41=========================================
+const apartment = {
+  descr: "Spacious apartment in the city center",
+  rating: 4,
+  price: 2153,
+};
+const keys = [];
+const values = [];
+// Change code below this line
+for(const key in apartment){
+  keys.push(key);
+  values.push(apartment[key])
+};
+console.log(keys);
+console.log(values);
