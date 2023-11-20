@@ -291,3 +291,17 @@
 // console.log(countProps({ mail: "poly@mail.com", isOnline: true, score: 500 }));
 // --------------------------------------------------------------------------------------------------
 // ==============================================14/41=========================================
+
+// ==============================================15/41=========================================
+const apartment = {
+  descr: "Spacious apartment in the city center",
+  rating: 4,
+  price: 2153,
+};
+// Change code below this line
+const keys = Object.keys(apartment);
+const values = Object.values(apartment);
+
+console.log(keys);
+console.log(values);
+// ==============================================15/41=========================================
