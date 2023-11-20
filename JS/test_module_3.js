@@ -195,25 +195,43 @@
 // ==============================================10/41=========================================
 
 // ==============================================11/41=========================================
-const keys = [];
-const values = [];
-const advert = {
-  service: "apt",
-};
-const apartment = Object.create(advert);
-apartment.descr = "Spacious apartment in the city center";
-apartment.rating = 4;
-apartment.price = 2153;
+// const keys = [];
+// const values = [];
+// const advert = {
+//   service: "apt",
+// };
+// const apartment = Object.create(advert);
+// apartment.descr = "Spacious apartment in the city center";
+// apartment.rating = 4;
+// apartment.price = 2153;
 
-for (const key in apartment) {
-  // Change code below this line
-if(apartment.hasOwnProperty(key)){
-  keys.push(key);
-  values.push(apartment[key]);
-}
+// for (const key in apartment) {
+//   // Change code below this line
+// if(apartment.hasOwnProperty(key)){
+//   keys.push(key);
+//   values.push(apartment[key]);
+// }
   
 
-  // Change code above this line
+//   // Change code above this line
+// }
+// console.log(keys);
+// console.log(values);
+// ==============================================11/41=========================================
+
+// ==============================================12/41=========================================
+
+function countProps(object) {
+  let propCount = 0;
+  // Change code below this line
+for(key in object){
+  if(object.hasOwnProperty(key)){
+    propCount += 1;
+  }
 }
-console.log(keys);
-console.log(values);
+  // Change code above this line
+  return propCount;
+};
+console.log(countProps({ name: "Mango", age: 2 }));
+console.log(countProps({ mail: "poly@mail.com", isOnline: true, score: 500 }));
+// ==============================================12/41=========================================
