@@ -178,17 +178,42 @@
 // ==============================================9/41=========================================
 
 // ==============================================10/41=========================================
-const apartment = {
-  descr: "Spacious apartment in the city center",
-  rating: 4,
-  price: 2153,
-};
+// const apartment = {
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+// };
+// const keys = [];
+// const values = [];
+// // Change code below this line
+// for(const key in apartment){
+//   keys.push(key);
+//   values.push(apartment[key])
+// };
+// console.log(keys);
+// console.log(values);
+// ==============================================10/41=========================================
+
+// ==============================================11/41=========================================
 const keys = [];
 const values = [];
-// Change code below this line
-for(const key in apartment){
-  keys.push(key);
-  values.push(apartment[key])
+const advert = {
+  service: "apt",
 };
+const apartment = Object.create(advert);
+apartment.descr = "Spacious apartment in the city center";
+apartment.rating = 4;
+apartment.price = 2153;
+
+for (const key in apartment) {
+  // Change code below this line
+if(apartment.hasOwnProperty(key)){
+  keys.push(key);
+  values.push(apartment[key]);
+}
+  
+
+  // Change code above this line
+}
 console.log(keys);
 console.log(values);
