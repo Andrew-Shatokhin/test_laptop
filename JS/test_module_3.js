@@ -293,15 +293,33 @@
 // ==============================================14/41=========================================
 
 // ==============================================15/41=========================================
-const apartment = {
-  descr: "Spacious apartment in the city center",
-  rating: 4,
-  price: 2153,
-};
-// Change code below this line
-const keys = Object.keys(apartment);
-const values = Object.values(apartment);
+// const apartment = {
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+// };
+// // Change code below this line
+// const keys = Object.keys(apartment);
+// const values = Object.values(apartment);
 
-console.log(keys);
-console.log(values);
+// console.log(keys);
+// console.log(values);
 // ==============================================15/41=========================================
+
+// ==============================================16/41=========================================
+function countTotalSalary(salaries) {
+  let totalSalary = 0;
+  // Change code below this line
+  const values = Object.values(salaries);
+  for (const value of values) {
+    totalSalary += value;
+  }
+  // Change code above this line
+  
+  return totalSalary;
+};
+console.log(countTotalSalary({ mango: 100, poly: 150, alfred: 80 }));
+console.log(countTotalSalary({ kiwi: 200, poly: 50, ajax: 150 }));
+// ==============================================16/41=========================================
+
+// ==============================================17/41=========================================
