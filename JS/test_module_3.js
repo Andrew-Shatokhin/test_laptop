@@ -443,19 +443,35 @@
 // ==============================================21/41=========================================
 
 // ==============================================22/41=========================================
+// const highTemperatures = {
+//   yesterday: 28,
+//   today: 26,
+//   tomorrow: 33,
+// };
+// // Change code below this line
+// const { yesterday, today, tomorrow, icon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg" } = highTemperatures;
+
+
+
+// // Change code above this line
+// const meanTemperature = (yesterday + today + tomorrow) / 3;
+// console.log(meanTemperature);
+// ==============================================22/41=========================================
+
+// ==============================================23/41=========================================
 const highTemperatures = {
   yesterday: 28,
   today: 26,
   tomorrow: 33,
 };
 // Change code below this line
-const { yesterday, today, tomorrow, icon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg" } = highTemperatures;
+const { yesterday: highYesterday, today: highToday, tomorrow: highTomorrow, icon: highIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg" } = highTemperatures;
 
 
 
 // Change code above this line
-const meanTemperature = (yesterday + today + tomorrow) / 3;
+const meanTemperature = (highYesterday + highToday + highTomorrow) / 3;
 console.log(meanTemperature);
-// ==============================================22/41=========================================
-
 // ==============================================23/41=========================================
+
+// ==============================================24/41=========================================
