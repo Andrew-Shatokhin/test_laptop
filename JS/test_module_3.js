@@ -459,19 +459,38 @@
 // ==============================================22/41=========================================
 
 // ==============================================23/41=========================================
-const highTemperatures = {
-  yesterday: 28,
-  today: 26,
-  tomorrow: 33,
-};
-// Change code below this line
-const { yesterday: highYesterday, today: highToday, tomorrow: highTomorrow, icon: highIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg" } = highTemperatures;
+// const highTemperatures = {
+//   yesterday: 28,
+//   today: 26,
+//   tomorrow: 33,
+// };
+// // Change code below this line
+// const { yesterday: highYesterday, today: highToday, tomorrow: highTomorrow, icon: highIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg" } = highTemperatures;
 
 
 
-// Change code above this line
-const meanTemperature = (highYesterday + highToday + highTomorrow) / 3;
-console.log(meanTemperature);
+// // Change code above this line
+// const meanTemperature = (highYesterday + highToday + highTomorrow) / 3;
+// console.log(meanTemperature);
 // ==============================================23/41=========================================
 
+// ==============================================24/41=========================================
+const colors = [
+  { hex: "#f44336", rgb: "244,67,54" },
+  { hex: "#2196f3", rgb: "33,150,243" },
+  { hex: "#4caf50", rgb: "76,175,80" },
+  { hex: "#ffeb3b", rgb: "255,235,59" },
+];
+
+const hexColors = [];
+const rgbColors = [];
+// Change code below this line
+
+for (const { hex, rgb } of colors) {
+  // const { hex, rgb } = color;
+  hexColors.push(hex);
+  rgbColors.push(rgb);
+};
+console.log(hexColors);
+console.log(rgbColors);
 // ==============================================24/41=========================================
