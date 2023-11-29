@@ -557,22 +557,38 @@
 // ==============================================28/41=========================================
 
 // ==============================================29/41=========================================
-const defaultSettings = {
-  theme: "light",
-  public: true,
-  withPassword: false,
-  minNumberOfQuestions: 10,
-  timePerQuestion: 60,
-};
-const overrideSettings = {
-  public: false,
-  withPassword: true,
-  timePerQuestion: 30,
-};
-// Change code below this line
-const finalSettings = { ...defaultSettings, ...overrideSettings };
+// const defaultSettings = {
+//   theme: "light",
+//   public: true,
+//   withPassword: false,
+//   minNumberOfQuestions: 10,
+//   timePerQuestion: 60,
+// };
+// const overrideSettings = {
+//   public: false,
+//   withPassword: true,
+//   timePerQuestion: 30,
+// };
+// // Change code below this line
+// const finalSettings = { ...defaultSettings, ...overrideSettings };
 
-console.log(finalSettings);
+// console.log(finalSettings);
 // ==============================================29/41=========================================
 
 // ==============================================30/41=========================================
+function makeTask(data) {
+  const completed = false;
+  const category = "General";
+  const priority = "Normal";
+  // Change code below this line
+return {completed, category, priority, ...data}
+  // Change code above this line
+};
+console.log(makeTask({ category: "Homemade", priority: "Low", text: "Take out the trash" }));
+console.log(makeTask({ category: "Finance", text: "Take interest" }));
+console.log(makeTask({ priority: "Low", text: "Choose shampoo" }));
+console.log(makeTask({ text: "Buy bread" }));
+// ==============================================30/41=========================================
+
+// ==============================================31/41=========================================
+
