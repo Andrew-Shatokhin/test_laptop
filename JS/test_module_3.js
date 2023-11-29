@@ -576,19 +576,38 @@
 // ==============================================29/41=========================================
 
 // ==============================================30/41=========================================
-function makeTask(data) {
-  const completed = false;
-  const category = "General";
-  const priority = "Normal";
-  // Change code below this line
-return {completed, category, priority, ...data}
-  // Change code above this line
-};
-console.log(makeTask({ category: "Homemade", priority: "Low", text: "Take out the trash" }));
-console.log(makeTask({ category: "Finance", text: "Take interest" }));
-console.log(makeTask({ priority: "Low", text: "Choose shampoo" }));
-console.log(makeTask({ text: "Buy bread" }));
+// function makeTask(data) {
+//   const completed = false;
+//   const category = "General";
+//   const priority = "Normal";
+//   // Change code below this line
+// return {completed, category, priority, ...data}
+//   // Change code above this line
+// };
+// console.log(makeTask({ category: "Homemade", priority: "Low", text: "Take out the trash" }));
+// console.log(makeTask({ category: "Finance", text: "Take interest" }));
+// console.log(makeTask({ priority: "Low", text: "Choose shampoo" }));
+// console.log(makeTask({ text: "Buy bread" }));
 // ==============================================30/41=========================================
 
 // ==============================================31/41=========================================
+// Change code below this line
+function add(...args) {
+ 
+  let sum = 0;
+  for (let i = 0; i < args.length; i += 1){
+    sum += args[i];
+    }
+  
+  return sum;
+  // Change code above this line
+};
+
+console.log(add(15, 27));
+console.log(add(12, 4, 11, 48));
+console.log(add(32, 6, 13, 19, 8));
+console.log(add(74, 11, 62, 46, 12, 36));
+// ==============================================31/41=========================================
+
+// ==============================================32/41=========================================
 
