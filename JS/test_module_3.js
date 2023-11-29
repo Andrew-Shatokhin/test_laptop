@@ -521,18 +521,26 @@
 
 // ==============================================26/41=========================================
 
-function calculateMeanTemperature(forecast) {
-const { today: { low: todayLow, high: todayHigh}, tomorrow: { low: tomorrowLow, high: tomorrowHigh }} = forecast;
+// function calculateMeanTemperature(forecast) {
+// const { today: { low: todayLow, high: todayHigh}, tomorrow: { low: tomorrowLow, high: tomorrowHigh }} = forecast;
 
   
   
-  // Change code above this line
-  return (todayLow + todayHigh + tomorrowLow + tomorrowHigh) / 4;
-};
-console.log(calculateMeanTemperature({ today: {low: 28, high: 32}, tomorrow: {low: 25, high: 29} }));
-console.log(calculateMeanTemperature({ today: {low: 37, high: 40}, tomorrow: {low: 33, high: 38} }));
+//   // Change code above this line
+//   return (todayLow + todayHigh + tomorrowLow + tomorrowHigh) / 4;
+// };
+// console.log(calculateMeanTemperature({ today: {low: 28, high: 32}, tomorrow: {low: 25, high: 29} }));
+// console.log(calculateMeanTemperature({ today: {low: 37, high: 40}, tomorrow: {low: 33, high: 38} }));
 // ==============================================26/41=========================================
 
 // ==============================================27/41=========================================
 
+const scores = [89, 64, 42, 17, 93, 51, 26];
+// Change code below this line
+const bestScore = (Math.max(...scores));
+const worstScore = (Math.min(...scores));
+console.log(bestScore);
+console.log(worstScore);
+// ==============================================27/41=========================================
 
+// ==============================================28/41=========================================
