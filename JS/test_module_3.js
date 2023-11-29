@@ -497,24 +497,42 @@
 
 // ==============================================25/41=========================================
 
-const forecast = {
-  today: {
-    low: 28,
-    high: 32,
-    icon: "https://www.flaticon.com/svg/static/icons/svg/861/861059.svg",
-  },
-  tomorrow: {
-    low: 27,
-    high: 31,
-  },
-};
-// Change code below this line
-const { today: { low: lowToday, high: highToday, icon: todayIcon= "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg" }, tomorrow: { low: lowTomorrow, high: highTomorrow, icon: tomorrowIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg" }} = forecast;
+// const forecast = {
+//   today: {
+//     low: 28,
+//     high: 32,
+//     icon: "https://www.flaticon.com/svg/static/icons/svg/861/861059.svg",
+//   },
+//   tomorrow: {
+//     low: 27,
+//     high: 31,
+//   },
+// };
+// // Change code below this line
+// const { today: { low: lowToday, high: highToday, icon: todayIcon= "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg" }, tomorrow: { low: lowTomorrow, high: highTomorrow, icon: tomorrowIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg" }} = forecast;
 
-console.log(highToday);
-console.log(lowToday);
-console.log(todayIcon);
-console.log(highTomorrow);
-console.log(lowTomorrow);
-console.log(tomorrowIcon);
+// console.log(highToday);
+// console.log(lowToday);
+// console.log(todayIcon);
+// console.log(highTomorrow);
+// console.log(lowTomorrow);
+// console.log(tomorrowIcon);
 // ==============================================25/41=========================================
+
+// ==============================================26/41=========================================
+
+function calculateMeanTemperature(forecast) {
+const { today: { low: todayLow, high: todayHigh}, tomorrow: { low: tomorrowLow, high: tomorrowHigh }} = forecast;
+
+  
+  
+  // Change code above this line
+  return (todayLow + todayHigh + tomorrowLow + tomorrowHigh) / 4;
+};
+console.log(calculateMeanTemperature({ today: {low: 28, high: 32}, tomorrow: {low: 25, high: 29} }));
+console.log(calculateMeanTemperature({ today: {low: 37, high: 40}, tomorrow: {low: 33, high: 38} }));
+// ==============================================26/41=========================================
+
+// ==============================================27/41=========================================
+
+
