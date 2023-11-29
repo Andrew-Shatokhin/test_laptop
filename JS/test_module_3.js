@@ -592,22 +592,43 @@
 
 // ==============================================31/41=========================================
 // Change code below this line
-function add(...args) {
+// function add(...args) {
  
-  let sum = 0;
-  for (let i = 0; i < args.length; i += 1){
-    sum += args[i];
-    }
+//   let sum = 0;
+//   for (let i = 0; i < args.length; i += 1){
+//     sum += args[i];
+//     }
   
-  return sum;
-  // Change code above this line
-};
+//   return sum;
+//   // Change code above this line
+// };
 
-console.log(add(15, 27));
-console.log(add(12, 4, 11, 48));
-console.log(add(32, 6, 13, 19, 8));
-console.log(add(74, 11, 62, 46, 12, 36));
+// console.log(add(15, 27));
+// console.log(add(12, 4, 11, 48));
+// console.log(add(32, 6, 13, 19, 8));
+// console.log(add(74, 11, 62, 46, 12, 36));
 // ==============================================31/41=========================================
 
 // ==============================================32/41=========================================
+// Change code below this line
+function addOverNum(firstArg, ...args) {
+  let total = 0;
+
+  for (const arg of args) {
+    if (arg > firstArg) {
+      total += arg;
+    }
+    
+  }
+
+  return total;
+  // Change code above this line
+};
+console.log(addOverNum(50, 15, 27));
+console.log(addOverNum(10, 12, 4, 11, 48, 10, 8));
+console.log(addOverNum(15, 32, 6, 13, 19, 8));
+console.log(addOverNum(20, 74, 11, 62, 46, 12, 36));
+// ==============================================32/41=========================================
+
+// ==============================================33/41=========================================
 
