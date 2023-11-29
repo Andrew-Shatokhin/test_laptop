@@ -544,16 +544,35 @@
 // ==============================================27/41=========================================
 
 // ==============================================28/41=========================================
-const firstGroupScores = [64, 42, 93];
-const secondGroupScores = [89, 14, 51, 26];
-const thirdGroupScores = [29, 47, 18, 97, 81];
-// Change code below this line
-const allScores = [...firstGroupScores, ...secondGroupScores, ...thirdGroupScores];
-const bestScore = (Math.max(...allScores));
-const worstScore = (Math.min(...allScores));
-console.log(allScores);
-console.log(bestScore);
-console.log(worstScore);
+// const firstGroupScores = [64, 42, 93];
+// const secondGroupScores = [89, 14, 51, 26];
+// const thirdGroupScores = [29, 47, 18, 97, 81];
+// // Change code below this line
+// const allScores = [...firstGroupScores, ...secondGroupScores, ...thirdGroupScores];
+// const bestScore = (Math.max(...allScores));
+// const worstScore = (Math.min(...allScores));
+// console.log(allScores);
+// console.log(bestScore);
+// console.log(worstScore);
 // ==============================================28/41=========================================
 
 // ==============================================29/41=========================================
+const defaultSettings = {
+  theme: "light",
+  public: true,
+  withPassword: false,
+  minNumberOfQuestions: 10,
+  timePerQuestion: 60,
+};
+const overrideSettings = {
+  public: false,
+  withPassword: true,
+  timePerQuestion: 30,
+};
+// Change code below this line
+const finalSettings = { ...defaultSettings, ...overrideSettings };
+
+console.log(finalSettings);
+// ==============================================29/41=========================================
+
+// ==============================================30/41=========================================
