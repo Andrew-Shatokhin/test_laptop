@@ -716,18 +716,34 @@
 // ==============================================37/41=========================================
 
 // ==============================================38/41=========================================
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//   addPotion(potionName) {
+//     // Change code below this line
+//     this.potions.splice(this.potions.length, 0, potionName);
+//     // return this.potions;
+
+//     // Change code above this line
+//   },
+// };
+// // console.log(atTheOldToad.addPotion("Invisibility"));
+// // console.log(atTheOldToad.addPotion("Power potion"));
+// ==============================================38/41=========================================
+
+// ==============================================39/41=========================================
 const atTheOldToad = {
   potions: ["Speed potion", "Dragon breath", "Stone skin"],
-  addPotion(potionName) {
+  removePotion(potionName) {
     // Change code below this line
-    this.potions.splice(this.potions.length, 0, potionName);
-    // return this.potions;
+    const indexPotion = this.potions.indexOf(potionName);
+    this.potions.splice(indexPotion, 1);
+    return this.potions;
 
     // Change code above this line
   },
 };
-// console.log(atTheOldToad.addPotion("Invisibility"));
-// console.log(atTheOldToad.addPotion("Power potion"));
-// ==============================================38/41=========================================
-
+console.log(atTheOldToad.removePotion("Dragon breath"));
+console.log(atTheOldToad.removePotion("Speed potion"));
 // ==============================================39/41=========================================
+
+// ==============================================40/41=========================================
