@@ -673,19 +673,19 @@
 // ==============================================34/41=========================================
 
 // ==============================================35/41=========================================
-const bookShelf = {
-  books: ["The last kingdom", "Haze", "The guardian of dreams"],
-  updateBook(oldName, newName) {
-    // Change code below this line
-    const bookIndex = this.books.indexOf(oldName);
-    // console.log(bookIndex);
-    this.books.splice(bookIndex, 1, newName);
-    // console.log(this.books);
-    // return this.books;
+// const bookShelf = {
+//   books: ["The last kingdom", "Haze", "The guardian of dreams"],
+//   updateBook(oldName, newName) {
+//     // Change code below this line
+//     const bookIndex = this.books.indexOf(oldName);
+//     // console.log(bookIndex);
+//     this.books.splice(bookIndex, 1, newName);
+//     // console.log(this.books);
+//     // return this.books;
 
-    // Change code above this line
-  },
-  };
+//     // Change code above this line
+//   },
+//   };
 
 // console.log(bookShelf.updateBook("Haze", "Dungeon chronicles"));
 // console.log(bookShelf.updateBook("The last kingdom", "Dune"));
@@ -704,15 +704,30 @@ const bookShelf = {
 
 // ==============================================37/41=========================================
 
-const atTheOldToad = {
-  potions: ["Speed potion", "Dragon breath", "Stone skin"],
-  // Change code below this line
-  getPotions() {
-   return this.potions;
-}
-  // Change code above this line
-};
-console.log(atTheOldToad.getPotions());
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//   // Change code below this line
+//   getPotions() {
+//    return this.potions;
+// }
+//   // Change code above this line
+// };
+// console.log(atTheOldToad.getPotions());
 // ==============================================37/41=========================================
 
 // ==============================================38/41=========================================
+const atTheOldToad = {
+  potions: ["Speed potion", "Dragon breath", "Stone skin"],
+  addPotion(potionName) {
+    // Change code below this line
+    this.potions.splice(this.potions.length, 0, potionName);
+    // return this.potions;
+
+    // Change code above this line
+  },
+};
+// console.log(atTheOldToad.addPotion("Invisibility"));
+// console.log(atTheOldToad.addPotion("Power potion"));
+// ==============================================38/41=========================================
+
+// ==============================================39/41=========================================
