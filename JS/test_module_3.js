@@ -731,19 +731,34 @@
 // ==============================================38/41=========================================
 
 // ==============================================39/41=========================================
-const atTheOldToad = {
-  potions: ["Speed potion", "Dragon breath", "Stone skin"],
-  removePotion(potionName) {
-    // Change code below this line
-    const indexPotion = this.potions.indexOf(potionName);
-    this.potions.splice(indexPotion, 1);
-    return this.potions;
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//   removePotion(potionName) {
+//     // Change code below this line
+//     const indexPotion = this.potions.indexOf(potionName);
+//     this.potions.splice(indexPotion, 1);
+//     return this.potions;
 
-    // Change code above this line
-  },
-};
-console.log(atTheOldToad.removePotion("Dragon breath"));
-console.log(atTheOldToad.removePotion("Speed potion"));
+//     // Change code above this line
+//   },
+// };
+// console.log(atTheOldToad.removePotion("Dragon breath"));
+// console.log(atTheOldToad.removePotion("Speed potion"));
 // ==============================================39/41=========================================
 
 // ==============================================40/41=========================================
+const atTheOldToad = {
+  potions: ["Speed potion", "Dragon breath", "Stone skin"],
+  updatePotionName(oldName, newName) {
+    // Change code below this line
+const indexPotion = this.potions.indexOf(oldName);
+    this.potions.splice(indexPotion, 1, newName);
+    return this.potions;
+    // Change code above this line
+  },
+};
+console.log(atTheOldToad.updatePotionName("Dragon breath", "Polymorth"));
+console.log(atTheOldToad.updatePotionName("Stone skin", "Invisibility"));
+// ==============================================40/41=========================================
+
+// ==============================================41/41=========================================
