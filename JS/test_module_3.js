@@ -651,25 +651,42 @@
 
 // ==============================================34/41=========================================
 
-const bookShelf = {
-  // Change code below this line
-  books: ["The last kingdom", "The guardian of dreams"],
-  getBooks() {
-    return "Returning all books";
-  },
-  addBook(bookName) {
-    return `Adding book ${bookName}`;
-  },
-  removeBook(bookName) {
-    return `Deleting book ${bookName}`
-  },
-  updateBook(oldName, newName) {
-    return `Updating book ${oldName} to ${newName}`
-  }
-  // Change code above this line
-};
-console.log(bookShelf.removeBook("Red sunset"));
-console.log(bookShelf.updateBook("Sands of dune", "Dune"));
+// const bookShelf = {
+//   // Change code below this line
+//   books: ["The last kingdom", "The guardian of dreams"],
+//   getBooks() {
+//     return "Returning all books";
+//   },
+//   addBook(bookName) {
+//     return `Adding book ${bookName}`;
+//   },
+//   removeBook(bookName) {
+//     return `Deleting book ${bookName}`
+//   },
+//   updateBook(oldName, newName) {
+//     return `Updating book ${oldName} to ${newName}`
+//   }
+//   // Change code above this line
+// };
+// console.log(bookShelf.removeBook("Red sunset"));
+// console.log(bookShelf.updateBook("Sands of dune", "Dune"));
 // ==============================================34/41=========================================
 
+// ==============================================35/41=========================================
+const bookShelf = {
+  books: ["The last kingdom", "Haze", "The guardian of dreams"],
+  updateBook(oldName, newName) {
+    // Change code below this line
+    const bookIndex = this.books.indexOf(oldName);
+    // console.log(bookIndex);
+    this.books.splice(bookIndex, 1, newName);
+    // console.log(this.books);
+    // return this.books;
+
+    // Change code above this line
+  },
+  };
+
+// console.log(bookShelf.updateBook("Haze", "Dungeon chronicles"));
+// console.log(bookShelf.updateBook("The last kingdom", "Dune"));
 // ==============================================35/41=========================================
