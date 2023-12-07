@@ -49,40 +49,65 @@
 // ==============================================3/48=========================================
 
 // ==============================================4/48=========================================
-const pizzaPalace = {
-  pizzas: ["Ultracheese", "Smoked", "Four meats"],
-  order(pizzaName, onSuccess, onError) {
-    if (this.pizzas.includes(pizzaName)) {
-      return onSuccess(pizzaName);
-    }
+// const pizzaPalace = {
+//   pizzas: ["Ultracheese", "Smoked", "Four meats"],
+//   order(pizzaName, onSuccess, onError) {
+//     if (this.pizzas.includes(pizzaName)) {
+//       return onSuccess(pizzaName);
+//     }
           
-    return onError(`There is no pizza with a name ${pizzaName} in the assortment.`);
-      },
-};
-// Change code above this line
+//     return onError(`There is no pizza with a name ${pizzaName} in the assortment.`);
+//       },
+// };
+// // Change code above this line
 
-// Callback for onSuccess
-function makePizza(pizzaName) {
-  return `Your order is accepted. Cooking pizza ${pizzaName}.`;
-}
-
-// Callback for onError
-// function onOrderError(error) {
-//   return `Error! There is no pizza with a name ${error} in the assortment`;
+// // Callback for onSuccess
+// function makePizza(pizzaName) {
+//   return `Your order is accepted. Cooking pizza ${pizzaName}.`;
 // }
 
-function onOrderError(error) {
-  return `Error! ${error}`;
-}
+// // Callback for onError
+// // function onOrderError(error) {
+// //   return `Error! There is no pizza with a name ${error} in the assortment`;
+// // }
 
-// Method calls with callbacks
-pizzaPalace.order("Smoked", makePizza, onOrderError);
-pizzaPalace.order("Four meats", makePizza, onOrderError);
-pizzaPalace.order("Big Mike", makePizza, onOrderError);
-pizzaPalace.order("Vienna", makePizza, onOrderError);
-console.log(pizzaPalace.order("Smoked", makePizza, onOrderError));
-console.log(pizzaPalace.order("Four meats", makePizza, onOrderError));
-console.log(pizzaPalace.order("Big Mike", makePizza, onOrderError));
-console.log(pizzaPalace.order("Vienna", makePizza, onOrderError))
+// function onOrderError(error) {
+//   return `Error! ${error}`;
+// }
+
+// // Method calls with callbacks
+// pizzaPalace.order("Smoked", makePizza, onOrderError);
+// pizzaPalace.order("Four meats", makePizza, onOrderError);
+// pizzaPalace.order("Big Mike", makePizza, onOrderError);
+// pizzaPalace.order("Vienna", makePizza, onOrderError);
+// console.log(pizzaPalace.order("Smoked", makePizza, onOrderError));
+// console.log(pizzaPalace.order("Four meats", makePizza, onOrderError));
+// console.log(pizzaPalace.order("Big Mike", makePizza, onOrderError));
+// console.log(pizzaPalace.order("Vienna", makePizza, onOrderError))
 // ==============================================4/48=========================================
+
+// ==============================================5/48=========================================
+function calculateTotalPrice(orderedItems) {
+  let totalPrice = 0;
+  // Change code below this line
+  orderedItems.forEach(function callback(item, index) {
+    // console.log(`Индекс: ${index} элемент: ${item}`)
+    totalPrice += orderedItems[index]
+  });
+
+  // for (let i = 0; i < orderedItems.length; i += 1) {
+  //   totalPrice += orderedItems[i];
+  // }
+
+  // Change code above this line
+  return totalPrice;
+};
+console.log(calculateTotalPrice([12, 85, 37, 4]));
+console.log(calculateTotalPrice([164, 48, 291]));
+console.log(calculateTotalPrice([412, 371, 94, 63, 176]));
+// ==============================================5/48=========================================
+
+// ==============================================6/48=========================================
+
+
 
