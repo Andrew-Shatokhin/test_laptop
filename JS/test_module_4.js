@@ -87,27 +87,49 @@
 // ==============================================4/48=========================================
 
 // ==============================================5/48=========================================
-function calculateTotalPrice(orderedItems) {
-  let totalPrice = 0;
-  // Change code below this line
-  orderedItems.forEach(function callback(item, index) {
-    // console.log(`Индекс: ${index} элемент: ${item}`)
-    totalPrice += orderedItems[index]
-  });
+// function calculateTotalPrice(orderedItems) {
+//   let totalPrice = 0;
+//   // Change code below this line
+//   orderedItems.forEach(function callback(item, index) {
+//     // console.log(`Индекс: ${index} элемент: ${item}`)
+//     totalPrice += orderedItems[index]
+//   });
 
-  // for (let i = 0; i < orderedItems.length; i += 1) {
-  //   totalPrice += orderedItems[i];
-  // }
+//   // for (let i = 0; i < orderedItems.length; i += 1) {
+//   //   totalPrice += orderedItems[i];
+//   // }
 
-  // Change code above this line
-  return totalPrice;
-};
-console.log(calculateTotalPrice([12, 85, 37, 4]));
-console.log(calculateTotalPrice([164, 48, 291]));
-console.log(calculateTotalPrice([412, 371, 94, 63, 176]));
+//   // Change code above this line
+//   return totalPrice;
+// };
+// console.log(calculateTotalPrice([12, 85, 37, 4]));
+// console.log(calculateTotalPrice([164, 48, 291]));
+// console.log(calculateTotalPrice([412, 371, 94, 63, 176]));
 // ==============================================5/48=========================================
 
 // ==============================================6/48=========================================
+function filterArray(numbers, value) {
+  const filteredNumbers = [];
+  // Change code below this line
+  numbers.forEach(function callback(el, index) {
+    if (el > value) {
+      filteredNumbers.push(el)
+    }
+  })
+
+  
+
+  // Change code above this line
+  return filteredNumbers;
+};
+console.log(filterArray([1, 2, 3, 4, 5], 3));
+console.log(filterArray([1, 2, 3, 4, 5], 4));
+console.log(filterArray([1, 2, 3, 4, 5], 5));
+console.log(filterArray([12, 24, 8, 41, 76], 38));
+console.log(filterArray([12, 24, 8, 41, 76], 20));
+// ==============================================6/48=========================================
+
+// ==============================================7/48=========================================
 
 
 
