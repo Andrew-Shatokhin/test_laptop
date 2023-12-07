@@ -130,26 +130,34 @@
 // ==============================================6/48=========================================
 
 // ==============================================7/48=========================================
-function getCommonElements(firstArray, secondArray) {
-  const commonElements = [];
-  // Change code below this line
-  firstArray.forEach(function callback(el, index) {
-    if (secondArray.includes(el)) {
-      commonElements.push(el);
-    }
-  });
+// function getCommonElements(firstArray, secondArray) {
+//   const commonElements = [];
+//   // Change code below this line
+//   firstArray.forEach(function callback(el, index) {
+//     if (secondArray.includes(el)) {
+//       commonElements.push(el);
+//     }
+//   });
 
-   return commonElements;
-  // Change code above this line
-};
-console.log(getCommonElements([1, 2, 3], [2, 4]));
-console.log(getCommonElements([1, 2, 3], [2, 1, 17, 19]));
-console.log(getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27]));
-console.log(getCommonElements([10, 20, 30, 40], [4, 30, 17, 10, 40]));
-console.log(getCommonElements([1, 2, 3], [10, 20, 30]));
+//    return commonElements;
+//   // Change code above this line
+// };
+// console.log(getCommonElements([1, 2, 3], [2, 4]));
+// console.log(getCommonElements([1, 2, 3], [2, 1, 17, 19]));
+// console.log(getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27]));
+// console.log(getCommonElements([10, 20, 30, 40], [4, 30, 17, 10, 40]));
+// console.log(getCommonElements([1, 2, 3], [10, 20, 30]));
 // ==============================================7/48=========================================
 
 // ==============================================8/48=========================================
+// Change code below this line
+
+const calculateTotalPrice = (quantity, pricePerItem) => {
+  return quantity * pricePerItem;
+}
+console.log(calculateTotalPrice(5, 100));
+console.log(calculateTotalPrice(8, 60));
+console.log(calculateTotalPrice(3, 400));
 
 
 
