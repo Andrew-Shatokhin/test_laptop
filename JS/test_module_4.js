@@ -108,28 +108,48 @@
 // ==============================================5/48=========================================
 
 // ==============================================6/48=========================================
-function filterArray(numbers, value) {
-  const filteredNumbers = [];
-  // Change code below this line
-  numbers.forEach(function callback(el, index) {
-    if (el > value) {
-      filteredNumbers.push(el)
-    }
-  })
+// function filterArray(numbers, value) {
+//   const filteredNumbers = [];
+//   // Change code below this line
+//   numbers.forEach(function callback(el, index) {
+//     if (el > value) {
+//       filteredNumbers.push(el)
+//     }
+//   })
 
   
 
-  // Change code above this line
-  return filteredNumbers;
-};
-console.log(filterArray([1, 2, 3, 4, 5], 3));
-console.log(filterArray([1, 2, 3, 4, 5], 4));
-console.log(filterArray([1, 2, 3, 4, 5], 5));
-console.log(filterArray([12, 24, 8, 41, 76], 38));
-console.log(filterArray([12, 24, 8, 41, 76], 20));
+//   // Change code above this line
+//   return filteredNumbers;
+// };
+// console.log(filterArray([1, 2, 3, 4, 5], 3));
+// console.log(filterArray([1, 2, 3, 4, 5], 4));
+// console.log(filterArray([1, 2, 3, 4, 5], 5));
+// console.log(filterArray([12, 24, 8, 41, 76], 38));
+// console.log(filterArray([12, 24, 8, 41, 76], 20));
 // ==============================================6/48=========================================
 
 // ==============================================7/48=========================================
+function getCommonElements(firstArray, secondArray) {
+  const commonElements = [];
+  // Change code below this line
+  firstArray.forEach(function callback(el, index) {
+    if (secondArray.includes(el)) {
+      commonElements.push(el);
+    }
+  });
+
+   return commonElements;
+  // Change code above this line
+};
+console.log(getCommonElements([1, 2, 3], [2, 4]));
+console.log(getCommonElements([1, 2, 3], [2, 1, 17, 19]));
+console.log(getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27]));
+console.log(getCommonElements([10, 20, 30, 40], [4, 30, 17, 10, 40]));
+console.log(getCommonElements([1, 2, 3], [10, 20, 30]));
+// ==============================================7/48=========================================
+
+// ==============================================8/48=========================================
 
 
 
