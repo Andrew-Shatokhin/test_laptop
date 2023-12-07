@@ -152,12 +152,23 @@
 // ==============================================8/48=========================================
 // Change code below this line
 
-const calculateTotalPrice = (quantity, pricePerItem) => {
-  return quantity * pricePerItem;
-}
+// const calculateTotalPrice = (quantity, pricePerItem) => {
+//   return quantity * pricePerItem;
+// }
+// console.log(calculateTotalPrice(5, 100));
+// console.log(calculateTotalPrice(8, 60));
+// console.log(calculateTotalPrice(3, 400));
+// ==============================================8/48=========================================
+
+// ==============================================9/48=========================================
+// Change code below this line
+const calculateTotalPrice = (quantity, pricePerItem) => quantity * pricePerItem;
+// Change code above this line
 console.log(calculateTotalPrice(5, 100));
 console.log(calculateTotalPrice(8, 60));
 console.log(calculateTotalPrice(3, 400));
+
+
 
 
 
