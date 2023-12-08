@@ -171,22 +171,43 @@
 
 // ==============================================10/48=========================================
 // Change code below this line
-const calculateTotalPrice = (orderedItems) => {
-  let totalPrice = 0;
+// const calculateTotalPrice = (orderedItems) => {
+//   let totalPrice = 0;
 
-  orderedItems.forEach(item => {
-    totalPrice += item;
-  });
+//   orderedItems.forEach(item => {
+//     totalPrice += item;
+//   });
 
-  return totalPrice;
-}
-// Change code above this line
-console.log(calculateTotalPrice([12, 85, 37, 4]));
-console.log(calculateTotalPrice([164, 48, 291]));
-console.log(calculateTotalPrice([412, 371, 94, 63, 176]));
+//   return totalPrice;
+// }
+// // Change code above this line
+// console.log(calculateTotalPrice([12, 85, 37, 4]));
+// console.log(calculateTotalPrice([164, 48, 291]));
+// console.log(calculateTotalPrice([412, 371, 94, 63, 176]));
 // ==============================================10/48=========================================
 
 // ==============================================11/48=========================================
+// Change code below this line
+const filterArray = (numbers, value) => {
+  const filteredNumbers = [];
+
+  numbers.forEach(number => {
+    if (number > value) {
+      filteredNumbers.push(number);
+    }
+  });
+
+  // Change code above this line
+  return filteredNumbers;
+};
+console.log(filterArray([1, 2, 3, 4, 5], 3));
+console.log(filterArray([1, 2, 3, 4, 5], 4));
+console.log(filterArray([1, 2, 3, 4, 5], 5));
+console.log(filterArray([12, 24, 8, 41, 76], 38));
+console.log(filterArray([12, 24, 8, 41, 76], 20));
+// ==============================================11/48=========================================
+
+// ==============================================12/48=========================================
 
 
 
