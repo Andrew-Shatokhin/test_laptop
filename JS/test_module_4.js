@@ -188,26 +188,47 @@
 
 // ==============================================11/48=========================================
 // Change code below this line
-const filterArray = (numbers, value) => {
-  const filteredNumbers = [];
+// const filterArray = (numbers, value) => {
+//   const filteredNumbers = [];
 
-  numbers.forEach(number => {
-    if (number > value) {
-      filteredNumbers.push(number);
+//   numbers.forEach(number => {
+//     if (number > value) {
+//       filteredNumbers.push(number);
+//     }
+//   });
+
+//   // Change code above this line
+//   return filteredNumbers;
+// };
+// console.log(filterArray([1, 2, 3, 4, 5], 3));
+// console.log(filterArray([1, 2, 3, 4, 5], 4));
+// console.log(filterArray([1, 2, 3, 4, 5], 5));
+// console.log(filterArray([12, 24, 8, 41, 76], 38));
+// console.log(filterArray([12, 24, 8, 41, 76], 20));
+// ==============================================11/48=========================================
+
+// ==============================================12/48=========================================
+// Change code below this line
+const getCommonElements = (firstArray, secondArray) => {
+  const commonElements = [];
+
+  firstArray.forEach(element => {
+    if (secondArray.includes(element)) {
+      commonElements.push(element);
     }
   });
 
   // Change code above this line
-  return filteredNumbers;
+  return commonElements;
 };
-console.log(filterArray([1, 2, 3, 4, 5], 3));
-console.log(filterArray([1, 2, 3, 4, 5], 4));
-console.log(filterArray([1, 2, 3, 4, 5], 5));
-console.log(filterArray([12, 24, 8, 41, 76], 38));
-console.log(filterArray([12, 24, 8, 41, 76], 20));
-// ==============================================11/48=========================================
-
+console.log(getCommonElements([1, 2, 3], [2, 4]));
+console.log(getCommonElements([1, 2, 3], [2, 1, 17, 19]));
+console.log(getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27]));
+console.log(getCommonElements([10, 20, 30, 40], [4, 30, 17, 10, 40]));
+console.log(getCommonElements([1, 2, 3], [10, 20, 30]));
 // ==============================================12/48=========================================
+
+// ==============================================13/48=========================================
 
 
 
