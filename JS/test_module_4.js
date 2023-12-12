@@ -396,14 +396,24 @@ const users = [
   
 // ==============================================18/48=========================================
 // Change code below this line
-const getUserEmails = users => users.map((user) => user.email);
-// const getUserEmails = users => {users.map(user => user.email)};
+// const getUserEmails = users => users.map((user) => user.email);
+
 
 // const getUserEmails = users => users.map(({email}) => email);
-// const getUserNames = users => {
-    
 
-//   };
-// const getUserEmails = users.map(user => user.email);
+
 // Change code above this line
-  console.log(getUserEmails(users))
+// console.log(getUserEmails(users))
+// ==============================================18/48=========================================
+  
+// ==============================================19/48=========================================
+// const numbers = [17, 24, 82, 61, 36, 18, 47, 52, 73];
+// // Change code below this line
+
+// const evenNumbers = numbers.filter(number => number %2 === 0);
+// const oddNumbers = numbers.filter(number => number % 2 !== 0);
+// console.log(evenNumbers);
+// console.log(oddNumbers);
+// ==============================================19/48=========================================
+
+// ==============================================20/48=========================================
