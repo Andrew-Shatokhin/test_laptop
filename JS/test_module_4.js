@@ -417,25 +417,59 @@
 // ==============================================19/48=========================================
 
 // ==============================================20/48=========================================
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     genres: ["adventure", "history"],
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     genres: ["fiction", "mysticism"],
+//   },
+//   {
+//     title: "Redder Than Blood",
+//     author: "Tanith Lee",
+//     genres: ["horror", "mysticism", "adventure"],
+//   },
+// ];
+// // Change code below this line
+// const allGenres = books.flatMap(book => book.genres);
+// const uniqueGenres = allGenres.filter((book, index, array)=> array.indexOf(book) === index);
+// console.log(allGenres);
+// console.log(uniqueGenres)
+// ==============================================20/48=========================================
+
+// ==============================================21/48=========================================
 const books = [
   {
     title: "The Last Kingdom",
     author: "Bernard Cornwell",
-    genres: ["adventure", "history"],
+    rating: 8.38,
   },
   {
     title: "Beside Still Waters",
     author: "Robert Sheckley",
-    genres: ["fiction", "mysticism"],
+    rating: 8.51,
   },
   {
-    title: "Redder Than Blood",
-    author: "Tanith Lee",
-    genres: ["horror", "mysticism", "adventure"],
+    title: "The Dream of a Ridiculous Man",
+    author: "Fyodor Dostoevsky",
+    rating: 7.75,
   },
+  { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+  { title: "Enemy of God", author: "Bernard Cornwell", rating: 8.67 },
 ];
+
+const MIN_RATING = 8;
+const AUTHOR = "Bernard Cornwell";
 // Change code below this line
-const allGenres = books.flatMap(book => book.genres);
-const uniqueGenres = allGenres.filter((book, index, array)=> array.indexOf(book) === index);
-console.log(allGenres);
-console.log(uniqueGenres)
+
+const topRatedBooks = books.filter(({ rating }) => rating >= MIN_RATING);
+const booksByAuthor = books.filter(({author})=> author === AUTHOR);
+console.log(topRatedBooks);
+console.log(booksByAuthor);
+// ==============================================21/48=========================================
+
+// ==============================================22/48=========================================
