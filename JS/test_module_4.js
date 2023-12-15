@@ -78,8 +78,8 @@ const users = [
     age: 39,
   },
 ];
-// ==============================================1/48=========================================
 // function makePizza() {
+  // ==============================================1/48=========================================
 //   return "Your pizza is being prepared, please wait.";
 // }
 // // Change code below this line
@@ -554,11 +554,21 @@ const users = [
 // ==============================================22/48=========================================
 // Change code below this line
 // const getUsersWithEyeColor = (users, color) => users.filter(({ eyeColor }) => eyeColor === color);
-const getUsersWithEyeColor = (users, color) => users.filter( user => user.eyeColor === color); 
+// const getUsersWithEyeColor = (users, color) => users.filter( user => user.eyeColor === color); 
 
-// Change code above this line
-console.log(getUsersWithEyeColor(users, "blue"));
-console.log(getUsersWithEyeColor(users, "green"));
+// // Change code above this line
+// console.log(getUsersWithEyeColor(users, "blue"));
+// console.log(getUsersWithEyeColor(users, "green"));
 // ==============================================22/48=========================================
 
 // ==============================================23/48=========================================
+// // Change code below this line
+// const getUsersWithAge = (users, minAge, maxAge) => users.filter(user => user.age > minAge && user.age < maxAge );
+// // Change code above this line
+// console.log(getUsersWithAge(users, 20, 30));
+// console.log(getUsersWithAge(users, 30, 40));
+// console.log(getUsersWithAge(users, 80, 100));
+// ==============================================23/48=========================================
+
+// ==============================================24/48=========================================
+
