@@ -554,7 +554,7 @@ const users = [
 // ==============================================22/48=========================================
 // Change code below this line
 // const getUsersWithEyeColor = (users, color) => users.filter(({ eyeColor }) => eyeColor === color);
-// const getUsersWithEyeColor = (users, color) => users.filter( user => user.eyeColor === color); 
+// const getUsersWithEyeColor = (users, color) => users.filter( user => user.eyeColor === color);
 
 // // Change code above this line
 // console.log(getUsersWithEyeColor(users, "blue"));
@@ -562,8 +562,12 @@ const users = [
 // ==============================================22/48=========================================
 
 // ==============================================23/48=========================================
-// // Change code below this line
-// const getUsersWithAge = (users, minAge, maxAge) => users.filter(user => user.age > minAge && user.age < maxAge );
+// Change code below this line
+// v.1
+// const getUsersWithAge = (users, minAge, maxAge) => users.filter(user => user.age > minAge && user.age < maxAge);
+// v.2
+// const getUsersWithAge = (users, minAge, maxAge) => users.filter(({ age }) => age > minAge && age < maxAge);
+
 // // Change code above this line
 // console.log(getUsersWithAge(users, 20, 30));
 // console.log(getUsersWithAge(users, 30, 40));
@@ -572,3 +576,28 @@ const users = [
 
 // ==============================================24/48=========================================
 
+// Change code below this line
+// const getUsersWithFriend = (users, friendName) => users.filter(user => user.friends.includes(friendName));
+// const getUsersWithFriend = (users, friendName) => users.filter(({ friends }) => friends.includes(friendName));
+
+// // Change code above this line
+// console.log(getUsersWithFriend(users, "Briana Decker"));
+// console.log(getUsersWithFriend(users, "Goldie Gentry"));
+// console.log(getUsersWithFriend(users, "Adrian Cross"));
+// ==============================================24/48=========================================
+
+// ==============================================25/48=========================================
+// Change code below this line
+// const getFriends = (users) => users.filter(({ friends }) => friends);
+const getFriends = (users) => users.flatMap(user => user.friends).filter((friend, index, users) => users.indexOf(friend) === index);
+// const getFriends = (users) => users.flatMap(user => user.friends);
+// const getAllFriends = getFriends(users);
+// const getUniqueFriends = getAllFriends.filter((friend, index, users) => users.indexOf(friend) === index);
+
+// Change code above this line
+console.log(getFriends(users));
+// console.log(getAllFriends);
+// console.log(getUniqueFriends);
+// ==============================================25/48=========================================
+
+// ==============================================26/48=========================================
