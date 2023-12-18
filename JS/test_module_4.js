@@ -656,16 +656,42 @@ const users = [
 // ==============================================28/48=========================================
 
 // ==============================================29/48=========================================
-const getUserWithEmail = (users, email) => users.find(user => user.email === email);
+// const getUserWithEmail = (users, email) => users.find(user => user.email === email);
 
 
-// Change code above this line
+// // Change code above this line
 
-console.log(getUserWithEmail(users, "shereeanthony@kog.com"));
-console.log(getUserWithEmail(users, "elmahead@omatom.com"));
-console.log(getUserWithEmail(users, "blackburndotson@furnigeer.com"));
-console.log(getUserWithEmail(users, "shernthony@kog.com"));
+// console.log(getUserWithEmail(users, "shereeanthony@kog.com"));
+// console.log(getUserWithEmail(users, "elmahead@omatom.com"));
+// console.log(getUserWithEmail(users, "blackburndotson@furnigeer.com"));
+// console.log(getUserWithEmail(users, "shernthony@kog.com"));
 // ==============================================29/48=========================================
 
 // ==============================================30/48=========================================
+const firstArray = [26, 94, 36, 18];
+const secondArray = [17, 61, 23];
+const thirdArray = [17, 26, 94, 61, 36, 23, 18];
+// Change code below this line
+
+const eachElementInFirstIsEven = firstArray.every(number => number %2 === 0);
+const eachElementInFirstIsOdd = firstArray.every(number => number %2 !== 0);
+
+const eachElementInSecondIsEven = secondArray.every(number => number %2 === 0);
+const eachElementInSecondIsOdd = secondArray.every(number => number %2 !== 0);
+
+const eachElementInThirdIsEven = thirdArray.every(number => number %2 === 0);
+const eachElementInThirdIsOdd = thirdArray.every(number => number %2 !== 0);
+
+console.log(eachElementInFirstIsEven);
+console.log(eachElementInFirstIsOdd);
+
+console.log(eachElementInSecondIsEven);
+console.log(eachElementInSecondIsOdd);
+
+console.log(eachElementInThirdIsEven);
+console.log(eachElementInThirdIsOdd);
+// ==============================================30/48=========================================
+
+// ==============================================31/48=========================================
+
 
