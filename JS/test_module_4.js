@@ -589,15 +589,25 @@ const users = [
 // ==============================================25/48=========================================
 // Change code below this line
 // const getFriends = (users) => users.filter(({ friends }) => friends);
-const getFriends = (users) => users.flatMap(user => user.friends).filter((friend, index, users) => users.indexOf(friend) === index);
+// const getFriends = (users) => users.flatMap(user => user.friends).filter((friend, index, users) => users.indexOf(friend) === index);
 // const getFriends = (users) => users.flatMap(user => user.friends);
 // const getAllFriends = getFriends(users);
 // const getUniqueFriends = getAllFriends.filter((friend, index, users) => users.indexOf(friend) === index);
 
 // Change code above this line
-console.log(getFriends(users));
+// console.log(getFriends(users));
 // console.log(getAllFriends);
 // console.log(getUniqueFriends);
 // ==============================================25/48=========================================
 
 // ==============================================26/48=========================================
+// Change code below this line
+// const getActiveUsers = (users) => users.filter(user => user.isActive === true);
+const getActiveUsers = (users) => users.filter(user => user.isActive);
+
+
+// Change code above this line
+console.log(getActiveUsers(users));
+// ==============================================26/48=========================================
+
+// ==============================================27/48=========================================
