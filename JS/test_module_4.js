@@ -728,9 +728,28 @@ const users = [
 // ==============================================33/48=========================================
 
 // Change code below this line
-const isAnyUserActive = users => users.some(user => user.isActive);
-// Change code above this line
-console.log(isAnyUserActive(users));
+// const isAnyUserActive = users => users.some(user => user.isActive);
+// // Change code above this line
+// console.log(isAnyUserActive(users));
 // ==============================================33/48=========================================
 
 // ==============================================34/48=========================================
+const players = {
+  mango: 1270,
+  poly: 468,
+  ajax: 710,
+  kiwi: 244
+};
+const playtimes = Object.values(players); // [1270, 468, 710, 244]
+// Change code below this line
+
+const totalPlayTime = playtimes.reduce((acc, number) => {
+  return acc + number
+}, 0);
+// console.log(totalPlayTime);
+// Change code above this line
+const averagePlayTime = totalPlayTime / playtimes.length;
+console.log(averagePlayTime);
+// ==============================================34/48=========================================
+
+// ==============================================35/48=========================================
