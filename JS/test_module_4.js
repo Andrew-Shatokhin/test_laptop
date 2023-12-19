@@ -668,30 +668,37 @@ const users = [
 // ==============================================29/48=========================================
 
 // ==============================================30/48=========================================
-const firstArray = [26, 94, 36, 18];
-const secondArray = [17, 61, 23];
-const thirdArray = [17, 26, 94, 61, 36, 23, 18];
-// Change code below this line
+// const firstArray = [26, 94, 36, 18];
+// const secondArray = [17, 61, 23];
+// const thirdArray = [17, 26, 94, 61, 36, 23, 18];
+// // Change code below this line
 
-const eachElementInFirstIsEven = firstArray.every(number => number %2 === 0);
-const eachElementInFirstIsOdd = firstArray.every(number => number %2 !== 0);
+// const eachElementInFirstIsEven = firstArray.every(number => number %2 === 0);
+// const eachElementInFirstIsOdd = firstArray.every(number => number %2 !== 0);
 
-const eachElementInSecondIsEven = secondArray.every(number => number %2 === 0);
-const eachElementInSecondIsOdd = secondArray.every(number => number %2 !== 0);
+// const eachElementInSecondIsEven = secondArray.every(number => number %2 === 0);
+// const eachElementInSecondIsOdd = secondArray.every(number => number %2 !== 0);
 
-const eachElementInThirdIsEven = thirdArray.every(number => number %2 === 0);
-const eachElementInThirdIsOdd = thirdArray.every(number => number %2 !== 0);
+// const eachElementInThirdIsEven = thirdArray.every(number => number %2 === 0);
+// const eachElementInThirdIsOdd = thirdArray.every(number => number %2 !== 0);
 
-console.log(eachElementInFirstIsEven);
-console.log(eachElementInFirstIsOdd);
+// console.log(eachElementInFirstIsEven);
+// console.log(eachElementInFirstIsOdd);
 
-console.log(eachElementInSecondIsEven);
-console.log(eachElementInSecondIsOdd);
+// console.log(eachElementInSecondIsEven);
+// console.log(eachElementInSecondIsOdd);
 
-console.log(eachElementInThirdIsEven);
-console.log(eachElementInThirdIsOdd);
+// console.log(eachElementInThirdIsEven);
+// console.log(eachElementInThirdIsOdd);
 // ==============================================30/48=========================================
 
 // ==============================================31/48=========================================
+// const isEveryUserActive = (users) => users.every(user => user.isActive);
+const isEveryUserActive = (users) => users.every(({ isActive }) => isActive);
 
+// Change code above this line
+console.log(isEveryUserActive(users))
+// ==============================================31/48=========================================
+
+// ==============================================32/48=========================================
 
