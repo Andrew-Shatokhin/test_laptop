@@ -753,25 +753,33 @@ const users = [
 // ==============================================34/48=========================================
 
 // ==============================================35/48=========================================
-const players = [
-  { name: "Mango", playtime: 1270, gamesPlayed: 4 },
-  { name: "Poly", playtime: 469, gamesPlayed: 2 },
-  { name: "Ajax", playtime: 690, gamesPlayed: 3 },
-  { name: "Kiwi", playtime: 241, gamesPlayed: 1 },
-];
-// Change code below this line
-// v.1
+// const players = [
+//   { name: "Mango", playtime: 1270, gamesPlayed: 4 },
+//   { name: "Poly", playtime: 469, gamesPlayed: 2 },
+//   { name: "Ajax", playtime: 690, gamesPlayed: 3 },
+//   { name: "Kiwi", playtime: 241, gamesPlayed: 1 },
+// ];
+// // Change code below this line
+// // v.1
+// // const totalAveragePlaytimePerGame = players.reduce((acc, player) => {
+// //   return acc + (player.playtime / player.gamesPlayed)
+// // }, 0);
+// // v.2
 // const totalAveragePlaytimePerGame = players.reduce((acc, player) => {
-//   return acc + (player.playtime / player.gamesPlayed)
+//   const { playtime, gamesPlayed } = player;
+//   return acc + (playtime / gamesPlayed)
 // }, 0);
-// v.2
-const totalAveragePlaytimePerGame = players.reduce((acc, player) => {
-  const { playtime, gamesPlayed } = player;
-  return acc + (playtime / gamesPlayed)
-}, 0);
 
-console.log(totalAveragePlaytimePerGame);
+// console.log(totalAveragePlaytimePerGame);
 // ==============================================35/48=========================================
 
 // ==============================================36/48=========================================
+// Change code below this line
+const calculateTotalBalance = users => users.reduce((acc, user) => {
+  return acc + user.balance
+}, 0); 
+// Change code above this line
+console.log(calculateTotalBalance(users));
+// ==============================================36/48=========================================
 
+// ==============================================37/48=========================================
