@@ -775,11 +775,20 @@ const users = [
 
 // ==============================================36/48=========================================
 // Change code below this line
-const calculateTotalBalance = users => users.reduce((acc, user) => {
-  return acc + user.balance
-}, 0); 
-// Change code above this line
-console.log(calculateTotalBalance(users));
+// const calculateTotalBalance = users => users.reduce((acc, user) => {
+//   return acc + user.balance
+// }, 0); 
+// // Change code above this line
+// console.log(calculateTotalBalance(users));
 // ==============================================36/48=========================================
 
 // ==============================================37/48=========================================
+// Change code below this line
+const getTotalFriendCount = users => users.reduce((acc, user) => {
+  return acc + user.friends.length
+}, 0); 
+// Change code above this line
+console.log(getTotalFriendCount(users));
+// ==============================================37/48=========================================
+
+// ==============================================38/48=========================================
