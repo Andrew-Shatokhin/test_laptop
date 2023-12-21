@@ -884,9 +884,15 @@ const users = [
 
 // ==============================================43/48=========================================
 // Change code below this line
-const sortByDescendingFriendCount = users => [...users].sort((a, b)=> b.friends.length - a.friends.length);
-// Change code above this line
-console.log(sortByDescendingFriendCount(users));
+// const sortByDescendingFriendCount = users => [...users].sort((a, b)=> b.friends.length - a.friends.length);
+// // Change code above this line
+// console.log(sortByDescendingFriendCount(users));
 // ==============================================43/48=========================================
 
 // ==============================================44/48=========================================
+const sortByName = users => [...users].sort((a, b)=> a.name.localeCompare(b.name));
+// Change code above this line
+console.log(sortByName(users));
+// ==============================================44/48=========================================
+
+// ==============================================45/48=========================================
