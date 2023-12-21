@@ -876,10 +876,17 @@ const users = [
 // ==============================================41/48=========================================
 
 // ==============================================42/48=========================================
-// Change code below this line
-const sortByAscendingBalance = users => [...users].sort((a, b)=> a.balance - b.balance);
-// Change code above this line
-console.log(sortByAscendingBalance(users));
+// // Change code below this line
+// const sortByAscendingBalance = users => [...users].sort((a, b)=> a.balance - b.balance);
+// // Change code above this line
+// console.log(sortByAscendingBalance(users));
 // ==============================================42/48=========================================
 
 // ==============================================43/48=========================================
+// Change code below this line
+const sortByDescendingFriendCount = users => [...users].sort((a, b)=> b.friends.length - a.friends.length);
+// Change code above this line
+console.log(sortByDescendingFriendCount(users));
+// ==============================================43/48=========================================
+
+// ==============================================44/48=========================================
