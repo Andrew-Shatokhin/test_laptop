@@ -929,12 +929,19 @@ const users = [
 
 // ==============================================46/48=========================================
 // Change code below this line
-const getNamesSortedByFriendCount = users => [...users].sort((a, b) => a.friends.length - b.friends.length).map(user => user.name);
-// const getNamesSortedByFriendCount = users => [...users].sort((a, b) => a.friends.length - b.friends.length);
-// const getNamesSortedByFriendCount = users => users.map(user => user.friends.length);
+// const getNamesSortedByFriendCount = users => [...users].sort((a, b) => a.friends.length - b.friends.length).map(user => user.name);
 
 // Change code above this line
-console.log(getNamesSortedByFriendCount(users));
+// console.log(getNamesSortedByFriendCount(users));
 // ==============================================46/48=========================================
 
 // ==============================================47/48=========================================
+// Change code below this line
+const getSortedFriends = users => users.flatMap(user => user.friends).
+  filter((user, index, array) => array.indexOf(user) === index).
+  sort((a, b) => a.localeCompare(b));
+// Change code above this line
+console.log(getSortedFriends(users))
+// ==============================================47/48=========================================
+
+// ==============================================48/48=========================================
