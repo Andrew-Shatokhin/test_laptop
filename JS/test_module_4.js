@@ -937,11 +937,20 @@ const users = [
 
 // ==============================================47/48=========================================
 // Change code below this line
-const getSortedFriends = users => users.flatMap(user => user.friends).
-  filter((user, index, array) => array.indexOf(user) === index).
-  sort((a, b) => a.localeCompare(b));
-// Change code above this line
-console.log(getSortedFriends(users))
+// const getSortedFriends = users => users.flatMap(user => user.friends).
+//   filter((user, index, array) => array.indexOf(user) === index).
+//   sort((a, b) => a.localeCompare(b));
+// // Change code above this line
+// console.log(getSortedFriends(users))
 // ==============================================47/48=========================================
 
+// ==============================================48/48=========================================
+// Change code below this line
+const getTotalBalanceByGender = (users, gender) => users
+  .filter(user => user.gender === gender)
+  .map(user => user.balance)
+  .reduce((acc, el) => acc + el, 0);
+// Change code above this line
+console.log(getTotalBalanceByGender(users, "male"));
+console.log(getTotalBalanceByGender(users, "female"));
 // ==============================================48/48=========================================
