@@ -946,11 +946,11 @@ const users = [
 
 // ==============================================48/48=========================================
 // Change code below this line
-const getTotalBalanceByGender = (users, gender) => users
-  .filter(user => user.gender === gender)
-  .map(user => user.balance)
-  .reduce((acc, el) => acc + el, 0);
-// Change code above this line
-console.log(getTotalBalanceByGender(users, "male"));
-console.log(getTotalBalanceByGender(users, "female"));
+// const getTotalBalanceByGender = (users, gender) => users
+//   .filter(user => user.gender === gender)
+//   .map(user => user.balance)
+//   .reduce((acc, el) => acc + el, 0);
+// // Change code above this line
+// console.log(getTotalBalanceByGender(users, "male"));
+// console.log(getTotalBalanceByGender(users, "female"));
 // ==============================================48/48=========================================
