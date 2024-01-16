@@ -55,17 +55,17 @@
 // }
 // user.nickName()
 
-const user = {
-    name: "andrew",
-    age: 35,
-    married: true,
-    skills: {
-        skill: "html",
-        nickName: ()=> {
-    console.log(this)
-    }
+// const user = {
+//     name: "andrew",
+//     age: 35,
+//     married: true,
+//     skills: {
+//         skill: "html",
+//         nickName: ()=> {
+//     console.log(this)
+//     }
     
-}
+// }
 
-}
-user.skills.nickName()
+// }
+// user.skills.nickName()
