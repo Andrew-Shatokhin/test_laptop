@@ -69,3 +69,15 @@
 
 // }
 // user.skills.nickName()
+// const objA = {
+//     name: "A",
+//     myAge(a, b) {
+//         console.log(this, a, b)
+//     }
+// };
+// const objB = {
+//     name: "B"
+// };
+// const result = objA.myAge.bind(objB);
+// result(11, 22)
+// result(33, 44)
