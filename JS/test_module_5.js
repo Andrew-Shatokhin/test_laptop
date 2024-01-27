@@ -109,27 +109,35 @@
 //  ==============================================4/20=========================================
 
 //  ==============================================5/20=========================================
-const ancestor = {
-  name: "Paul",
-  age: 83,
-  surname: "Dawson",
-  heritage: "Irish",
-};
-// Change code below this line
+// const ancestor = {
+//   name: "Paul",
+//   age: 83,
+//   surname: "Dawson",
+//   heritage: "Irish",
+// };
+// // Change code below this line
 
-const parent = Object.create(ancestor);
-parent.name = "Stacey";
-parent.surname = "Moore";
-parent.age = 54;
+// const parent = Object.create(ancestor);
+// parent.name = "Stacey";
+// parent.surname = "Moore";
+// parent.age = 54;
 
-const child = Object.create(parent);
-child.name = "Jason";
-child.age = 27;
+// const child = Object.create(parent);
+// child.name = "Jason";
+// child.age = 27;
 
-// Change code above this line
-console.log('ancestor:', ancestor);
-console.log('parent:', parent);
-console.log('child:', child)
+// // Change code above this line
+// console.log('ancestor:', ancestor);
+// console.log('parent:', parent);
+// console.log('child:', child)
 //  ==============================================5/20=========================================
 
 //  ==============================================6/20=========================================
+class Car {
+
+}
+const newCar = new Car()
+console.log(newCar);
+//  ==============================================6/20=========================================
+
+//  ==============================================7/20=========================================
