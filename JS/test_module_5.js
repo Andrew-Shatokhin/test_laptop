@@ -159,30 +159,53 @@
 //  ==============================================7/20=========================================
 
 //  ==============================================8/20=========================================
+// class Car {
+//   // Change code below this line
+//   constructor({ brand, model, price }) {
+//     this.brand = brand;
+//     this.model = model;
+//     this.price = price;
+//   }
+//   // Change code above this line
+// }
+// const audi = new Car({
+//   brand: "Audi",
+//   model: "Q3",
+//   price: 36000
+// });
+// const bmw = new Car({
+//   brand: "BMW",
+//   model: "X5",
+//   price: 58900
+// });
+// const nissan = new Car({
+//   brand: "Nissan",
+//   model: "Murano",
+//   price: 31700
+// });
+// console.log(audi);
+// console.log(bmw);
+// console.log(nissan);
+//  ==============================================8/20=========================================
+
+//  ==============================================9/20=========================================
 class Car {
-  // Change code below this line
   constructor({ brand, model, price }) {
     this.brand = brand;
     this.model = model;
     this.price = price;
   }
+  // Change code below this line
+  getPrice() {
+    return this.price;
+  }
+  changePrice(newPrice) {
+    this.price = newPrice
+  }
+
+
   // Change code above this line
 }
-const audi = new Car({
-  brand: "Audi",
-  model: "Q3",
-  price: 36000
-});
-const bmw = new Car({
-  brand: "BMW",
-  model: "X5",
-  price: 58900
-});
-const nissan = new Car({
-  brand: "Nissan",
-  model: "Murano",
-  price: 31700
-});
-console.log(audi);
-console.log(bmw);
-console.log(nissan);
+//  ==============================================9/20=========================================
+
+//  ==============================================10/20=========================================
