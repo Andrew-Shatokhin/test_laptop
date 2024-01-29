@@ -269,37 +269,68 @@
 //  ==============================================11/20=========================================
 
 //  ==============================================12/20=========================================
-class Car {
-  // Change code below this line
-  #brand;
+// class Car {
+//   // Change code below this line
+//   #brand;
 
-  constructor({ brand, model, price }) {
-    this.#brand = brand;
-    this.model = model;
-    this.price = price;
-  }
-  getBrand() {
-    return this.#brand;
-  }
-  changeBrand(newBrand) {
-   this.#brand = newBrand;
-  }
+//   constructor({ brand, model, price }) {
+//     this.#brand = brand;
+//     this.model = model;
+//     this.price = price;
+//   }
+//   getBrand() {
+//     return this.#brand;
+//   }
+//   changeBrand(newBrand) {
+//    this.#brand = newBrand;
+//   }
 
-  // Change code above this line
-}
+//   // Change code above this line
+// }
 
-const audi = new Car({ brand: "Audi", model: "Q3", price: 36000 });
-const bmw = new Car({ brand: "bmw", model: "X5", price: 58900 });
-const nissan = new Car({ brand: "Nissan", model: "Murano", price: 31700 });
-
-
+// const audi = new Car({ brand: "Audi", model: "Q3", price: 36000 });
+// const bmw = new Car({ brand: "bmw", model: "X5", price: 58900 });
+// const nissan = new Car({ brand: "Nissan", model: "Murano", price: 31700 });
 
 
-console.log(audi);
-console.log(bmw);
-console.log(nissan);
-audi.changeBrand("Honda");
-console.log(audi);
+
+
+// console.log(audi);
+// console.log(bmw);
+// console.log(nissan);
+// audi.changeBrand("Honda");
+// console.log(audi);
 //  ==============================================12/20=========================================
 
 //  ==============================================13/20=========================================
+class Storage {
+  // Change code below this line
+  #items;
+
+  constructor(items) {
+    this.#items = items;
+  }
+
+  getItems() {
+    return this.#items;
+  }
+
+  addItem(newItem) {
+    this.#items.push(newItem);
+  }
+
+  removeItem(itemToRemove) {
+    this.#items = this.#items.filter(item => item !== itemToRemove);
+  }
+}
+
+// Change code above this line
+const storage = new Storage(["Nanitoids", "Prolonger", "Antigravitator"]);
+console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]
+storage.addItem("Droid");
+console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]
+storage.removeItem("Prolonger");
+console.log(storage.getItems()); // ["Нанитоиды", "Антигравитатор", "Droid"]
+//  ==============================================13/20=========================================
+
+//  ==============================================14/20=========================================
