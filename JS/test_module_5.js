@@ -237,35 +237,69 @@
 //  ==============================================10/20=========================================
 
 //  ==============================================11/20=========================================
-class StringBuilder {
-  constructor(initialValue) {
-    this.value = initialValue
-  }
-  getValue() {
-    return this.value;
-  }
-  padStart(str) {
-    // return str.concat(this.value) 
-    this.value = str + this.value
-  }
-  padEnd(str) {
-    this.value = this.value + str
-  }
-  padBoth(str) {
-    this.value = str + this.value + str
-  }
-}
+// class StringBuilder {
+//   constructor(initialValue) {
+//     this.value = initialValue
+//   }
+//   getValue() {
+//     return this.value;
+//   }
+//   padStart(str) {
+//     // return str.concat(this.value) 
+//     this.value = str + this.value
+//   }
+//   padEnd(str) {
+//     this.value = this.value + str
+//   }
+//   padBoth(str) {
+//     this.value = str + this.value + str
+//   }
+// }
 
 
-// Change code above this line
-const builder = new StringBuilder(".");
-console.log(builder.getValue()); // "."
-builder.padStart("^");
-console.log(builder.getValue()); // "^."
-builder.padEnd("^");
-console.log(builder.getValue()); // "^.^"
-builder.padBoth("=");
-console.log(builder.getValue()); // "=^.^="
+// // Change code above this line
+// const builder = new StringBuilder(".");
+// console.log(builder.getValue()); // "."
+// builder.padStart("^");
+// console.log(builder.getValue()); // "^."
+// builder.padEnd("^");
+// console.log(builder.getValue()); // "^.^"
+// builder.padBoth("=");
+// console.log(builder.getValue()); // "=^.^="
 //  ==============================================11/20=========================================
 
 //  ==============================================12/20=========================================
+class Car {
+  // Change code below this line
+  #brand;
+
+  constructor({ brand, model, price }) {
+    this.#brand = brand;
+    this.model = model;
+    this.price = price;
+  }
+  getBrand() {
+    return this.#brand;
+  }
+  changeBrand(newBrand) {
+   this.#brand = newBrand;
+  }
+
+  // Change code above this line
+}
+
+const audi = new Car({ brand: "Audi", model: "Q3", price: 36000 });
+const bmw = new Car({ brand: "bmw", model: "X5", price: 58900 });
+const nissan = new Car({ brand: "Nissan", model: "Murano", price: 31700 });
+
+
+
+
+console.log(audi);
+console.log(bmw);
+console.log(nissan);
+audi.changeBrand("Honda");
+console.log(audi);
+//  ==============================================12/20=========================================
+
+//  ==============================================13/20=========================================
