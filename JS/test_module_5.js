@@ -209,31 +209,63 @@
 //  ==============================================9/20=========================================
 
 //  ==============================================10/20=========================================
-class Storage{
-  constructor(items) {
-    this.items = items
-  }
-  getItems() {
-    return this.items;
-  }
-  addItem(newItem) {
-    this.items.push(newItem)
-  }
-  removeItem(itemToRemove) {
-    const idx = this.items.indexOf(itemToRemove);
-    // console.log(idx);
-    this.items.splice(idx, 1);
-    // return this.items;
-  }
-}
+// class Storage{
+//   constructor(items) {
+//     this.items = items
+//   }
+//   getItems() {
+//     return this.items;
+//   }
+//   addItem(newItem) {
+//     this.items.push(newItem)
+//   }
+//   removeItem(itemToRemove) {
+//     const idx = this.items.indexOf(itemToRemove);
+//     // console.log(idx);
+//     this.items.splice(idx, 1);
+//     // return this.items;
+//   }
+// }
 
-// Change code above this line
-const storage = new Storage(["Nanitoids", "Prolonger", "Antigravitator"]);
-console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]
-storage.addItem("Droid");
-console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]
-storage.removeItem("Prolonger");
-console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]
+// // Change code above this line
+// const storage = new Storage(["Nanitoids", "Prolonger", "Antigravitator"]);
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]
+// storage.addItem("Droid");
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]
+// storage.removeItem("Prolonger");
+// console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]
 //  ==============================================10/20=========================================
 
 //  ==============================================11/20=========================================
+class StringBuilder {
+  constructor(initialValue) {
+    this.value = initialValue
+  }
+  getValue() {
+    return this.value;
+  }
+  padStart(str) {
+    // return str.concat(this.value) 
+    this.value = str + this.value
+  }
+  padEnd(str) {
+    this.value = this.value + str
+  }
+  padBoth(str) {
+    this.value = str + this.value + str
+  }
+}
+
+
+// Change code above this line
+const builder = new StringBuilder(".");
+console.log(builder.getValue()); // "."
+builder.padStart("^");
+console.log(builder.getValue()); // "^."
+builder.padEnd("^");
+console.log(builder.getValue()); // "^.^"
+builder.padBoth("=");
+console.log(builder.getValue()); // "=^.^="
+//  ==============================================11/20=========================================
+
+//  ==============================================12/20=========================================
