@@ -303,34 +303,72 @@
 //  ==============================================12/20=========================================
 
 //  ==============================================13/20=========================================
-class Storage {
+// class Storage {
+//   // Change code below this line
+//   #items;
+
+//   constructor(items) {
+//     this.#items = items;
+//   }
+
+//   getItems() {
+//     return this.#items;
+//   }
+
+//   addItem(newItem) {
+//     this.#items.push(newItem);
+//   }
+
+//   removeItem(itemToRemove) {
+//     this.#items = this.#items.filter(item => item !== itemToRemove);
+//   }
+// }
+
+// // Change code above this line
+// const storage = new Storage(["Nanitoids", "Prolonger", "Antigravitator"]);
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]
+// storage.addItem("Droid");
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]
+// storage.removeItem("Prolonger");
+// console.log(storage.getItems()); // ["Нанитоиды", "Антигравитатор", "Droid"]
+//  ==============================================13/20=========================================
+
+//  ==============================================14/20=========================================
+class StringBuilder {
   // Change code below this line
-  #items;
+  #value;
 
-  constructor(items) {
-    this.#items = items;
+  constructor(initialValue) {
+    this.#value = initialValue;
   }
 
-  getItems() {
-    return this.#items;
+  getValue() {
+    return this.#value;
   }
 
-  addItem(newItem) {
-    this.#items.push(newItem);
+  padEnd(str) {
+    this.#value += str;
   }
 
-  removeItem(itemToRemove) {
-    this.#items = this.#items.filter(item => item !== itemToRemove);
+  padStart(str) {
+    this.#value = str + this.#value;
+  }
+
+  padBoth(str) {
+    this.padStart(str);
+    this.padEnd(str);
   }
 }
 
 // Change code above this line
-const storage = new Storage(["Nanitoids", "Prolonger", "Antigravitator"]);
-console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]
-storage.addItem("Droid");
-console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]
-storage.removeItem("Prolonger");
-console.log(storage.getItems()); // ["Нанитоиды", "Антигравитатор", "Droid"]
-//  ==============================================13/20=========================================
-
+const builder = new StringBuilder(".");
+console.log(builder.getValue()); // "."
+builder.padStart("^");
+console.log(builder.getValue()); // "^."
+builder.padEnd("^");
+console.log(builder.getValue()); // "^.^"
+builder.padBoth("=");
+console.log(builder.getValue()); // "=^.^="
 //  ==============================================14/20=========================================
+
+//  ==============================================15/20=========================================
