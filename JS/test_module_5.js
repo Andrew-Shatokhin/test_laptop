@@ -334,41 +334,82 @@
 //  ==============================================13/20=========================================
 
 //  ==============================================14/20=========================================
-class StringBuilder {
-  // Change code below this line
-  #value;
+// class StringBuilder {
+//   // Change code below this line
+//   #value;
 
-  constructor(initialValue) {
-    this.#value = initialValue;
-  }
+//   constructor(initialValue) {
+//     this.#value = initialValue;
+//   }
 
-  getValue() {
-    return this.#value;
-  }
+//   getValue() {
+//     return this.#value;
+//   }
 
-  padEnd(str) {
-    this.#value += str;
-  }
+//   padEnd(str) {
+//     this.#value += str;
+//   }
 
-  padStart(str) {
-    this.#value = str + this.#value;
-  }
+//   padStart(str) {
+//     this.#value = str + this.#value;
+//   }
 
-  padBoth(str) {
-    this.padStart(str);
-    this.padEnd(str);
-  }
-}
+//   padBoth(str) {
+//     this.padStart(str);
+//     this.padEnd(str);
+//   }
+// }
 
-// Change code above this line
-const builder = new StringBuilder(".");
-console.log(builder.getValue()); // "."
-builder.padStart("^");
-console.log(builder.getValue()); // "^."
-builder.padEnd("^");
-console.log(builder.getValue()); // "^.^"
-builder.padBoth("=");
-console.log(builder.getValue()); // "=^.^="
+// // Change code above this line
+// const builder = new StringBuilder(".");
+// console.log(builder.getValue()); // "."
+// builder.padStart("^");
+// console.log(builder.getValue()); // "^."
+// builder.padEnd("^");
+// console.log(builder.getValue()); // "^.^"
+// builder.padBoth("=");
+// console.log(builder.getValue()); // "=^.^="
 //  ==============================================14/20=========================================
 
 //  ==============================================15/20=========================================
+class Car {
+  // Change code below this line
+  #brand;
+  #model;
+  #price;
+
+  constructor({ brand, model, price }) {
+    this.#brand = brand;
+    this.#model = model;
+    this.#price = price;
+  }
+
+  get brand() {
+    return this.#brand;
+  }
+
+  set brand(newBrand) {
+    this.#brand = newBrand;
+  }
+
+  get model() {
+    return this.#model;
+  }
+
+  set model(newModel) {
+    this.#model = newModel;
+  }
+
+  get price() {
+    return this.#price;
+  }
+
+  set price(newPrice) {
+    this.#price = newPrice;
+  }
+  // Change code above this line
+}
+//  ==============================================15/20=========================================
+
+//  ==============================================16/20=========================================
+
