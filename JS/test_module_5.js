@@ -471,7 +471,34 @@
 //  ==============================================17/20=========================================
 
 //  ==============================================18/20=========================================
+// class User {
+//   constructor(email) {
+//     this.email = email;
+//   }
+
+//   get email() {
+//     return this.email;
+//   }
+
+//   set email(newEmail) {
+//     this.email = newEmail;
+//   }
+// }
+// // Change code below this line
+// class Admin extends User {
+//   static AccessLevel = {
+//     BASIC: "basic",
+//     SUPERUSER: "superuser"
+//   }
+// }
+// console.log(Admin.AccessLevel.BASIC);
+// console.log(Admin.AccessLevel.SUPERUSER);
+//  ==============================================18/20=========================================
+
+//  ==============================================19/20=========================================
 class User {
+  email;
+
   constructor(email) {
     this.email = email;
   }
@@ -484,16 +511,29 @@ class User {
     this.email = newEmail;
   }
 }
-// Change code below this line
+
 class Admin extends User {
+  // Change code below this line
+
   static AccessLevel = {
     BASIC: "basic",
-    SUPERUSER: "superuser"
-  }
+    SUPERUSER: "superuser",
+  };
+  constructor({ email, accessLevel }) {
+    super(email);
+    this.accessLevel = accessLevel;
 }
-console.log(Admin.AccessLevel.BASIC);
-console.log(Admin.AccessLevel.SUPERUSER);
-//  ==============================================18/20=========================================
+  // Change code above this line
+}
 
+const mango = new Admin({
+  email: "mango@mail.com",
+  accessLevel: Admin.AccessLevel.SUPERUSER,
+});
+
+console.log(mango.email); // "mango@mail.com"
+console.log(mango.accessLevel); // "superuser"
 //  ==============================================19/20=========================================
+
+//  ==============================================20/20=========================================
 
