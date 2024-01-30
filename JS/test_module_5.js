@@ -444,30 +444,56 @@
 //  ==============================================16/20=========================================
 
 //  ==============================================17/20=========================================
-class Car {
-  static #MAX_PRICE = 50000;
-  // Change code below this line
-  static checkPrice(price) {
-    if (price > Car.#MAX_PRICE) {
-    return "Error! Price exceeds the maximum"
-    }
-    return "Success! Price is within acceptable limits"
-}
-  // Change code above this line
-  constructor({ price }) {
-    this.price = price;
-  }
-}
+// class Car {
+//   static #MAX_PRICE = 50000;
+//   // Change code below this line
+//   static checkPrice(price) {
+//     if (price > Car.#MAX_PRICE) {
+//     return "Error! Price exceeds the maximum"
+//     }
+//     return "Success! Price is within acceptable limits"
+// }
+//   // Change code above this line
+//   constructor({ price }) {
+//     this.price = price;
+//   }
+// }
 
-const audi = new Car({ price: 36000 });
-const bmw = new Car({ price: 64000 });
+// const audi = new Car({ price: 36000 });
+// const bmw = new Car({ price: 64000 });
 
-console.log(Car.checkPrice(audi.price)); // "Success! Price is within acceptable limits"
-console.log(Car.checkPrice(bmw.price)); // "Error! Price exceeds the maximum"
-console.log(Car.checkPrice(36000));
-console.log(Car.checkPrice(18000));
-console.log(Car.checkPrice(64000));
-console.log(Car.checkPrice(64000));
+// console.log(Car.checkPrice(audi.price)); // "Success! Price is within acceptable limits"
+// console.log(Car.checkPrice(bmw.price)); // "Error! Price exceeds the maximum"
+// console.log(Car.checkPrice(36000));
+// console.log(Car.checkPrice(18000));
+// console.log(Car.checkPrice(64000));
+// console.log(Car.checkPrice(64000));
 //  ==============================================17/20=========================================
 
 //  ==============================================18/20=========================================
+class User {
+  constructor(email) {
+    this.email = email;
+  }
+
+  get email() {
+    return this.email;
+  }
+
+  set email(newEmail) {
+    this.email = newEmail;
+  }
+}
+// Change code below this line
+class Admin extends User {
+  static AccessLevel = {
+    BASIC: "basic",
+    SUPERUSER: "superuser"
+  }
+}
+console.log(Admin.AccessLevel.BASIC);
+console.log(Admin.AccessLevel.SUPERUSER);
+//  ==============================================18/20=========================================
+
+//  ==============================================19/20=========================================
+
